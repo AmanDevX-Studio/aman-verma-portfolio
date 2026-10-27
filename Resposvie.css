@@ -1,0 +1,454 @@
+/* ==============================
+   MOBILE RESPONSIVE
+   767px and below
+================================ */
+
+@media (max-width: 767px) {
+
+    /* Navbar */
+    .navbar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 12px;
+        padding: 14px 16px;
+        width: 100%;
+       
+    }
+
+    .navbar .logo {
+        position: static;
+        grid-column: 1;
+        grid-row: 1;
+        min-width: 0;
+    }
+
+    .navbar .btn {
+        position: static;
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        margin: 0;
+        padding: 9px 12px;
+        white-space: nowrap;
+    }
+
+    .navbar .menu {
+        position: static;
+        transform: none;
+        grid-column: 1 / -1;
+        grid-row: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px 16px;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .navbar .menu li a {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+
+    /* Hero */
+    .main-hero {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        gap: 24px;
+        width: 100%;
+        min-height: auto;
+        padding: 36px 20px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main-hero-left,
+    .main-hero-right {
+        width: 100%;
+        min-width: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .main-hero-left h1 {
+        padding: 0 0 12px;
+        font-size: clamp(1rem, 4vw, 1.3rem);
+        letter-spacing: 0;
+    }
+
+    .main-hero-left h2 {
+        font-size: clamp(2.2rem, 9vw, 3.2rem);
+        line-height: 1.12;
+        letter-spacing: -1px;
+        overflow-wrap: anywhere;
+    }
+
+    .main-hero-right h2 {
+        font-size: clamp(1.7rem, 7vw, 2.2rem);
+        line-height: 1.2;
+        letter-spacing: -0.5px;
+    }
+
+    .main-hero-right p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* About */
+    .content-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        width: 100%;
+        min-height: auto;
+        padding: 32px 18px;
+    }
+
+    .about-me-left,
+    .right-content {
+        width: 100%;
+        min-width: 0;
+        padding: 0;
+    }
+
+    .about-me-left p {
+        font-size: 15px;
+    }
+
+    .items {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .box {
+        padding: 22px;
+    }
+
+
+    /* Skills */
+    .skills {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 36px 18px;
+    }
+
+    .skills-container {
+        max-width: 100%;
+    }
+
+
+    /* Projects and cards */
+    .projects-section {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 32px 18px;
+        box-sizing: border-box;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .sub-cards {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        height: auto;
+    }
+
+    .card-img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .card-img img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+
+    /* Certificates */
+    .certi-section {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 24px;
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 32px 18px;
+        box-sizing: border-box;
+    }
+
+    .right-certi {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        height: auto;
+    }
+
+    .certificate-img-1 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .certificate-img-1 img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .left-btn,
+    .right-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* Contact */
+    .contact-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 32px 18px;
+        box-sizing: border-box;
+    }
+
+    .mid-content,
+    .right-form {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        height: auto;
+        min-height: 0;
+        padding: 22px;
+        box-sizing: border-box;
+    }
+
+    form {
+        width: 100%;
+        min-width: 0;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        width: 100%;
+        padding: 28px 18px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+}
+
+
+/* ==============================
+   TABLET RESPONSIVE
+   768px–1023px
+================================ */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* Navbar */
+    .navbar {
+        gap: 14px;
+        padding: 16px 20px;
+    }
+
+    .navbar .menu {
+        gap: 14px;
+    }
+
+    .navbar .menu li a {
+        font-size: 13px;
+    }
+
+    .navbar .btn {
+        padding: 9px 12px;
+        white-space: nowrap;
+    }
+
+
+    /* Hero */
+    .main-hero {
+        gap: 16px;
+        padding: 32px 0;
+    }
+
+    .main-hero-left {
+        padding: 30px 0 30px 4%;
+    }
+
+    .main-hero-right {
+        padding: 30px 4% 30px 8%;
+    }
+
+    .main-hero-left h2 {
+        font-size: clamp(2.2rem, 5vw, 3.8rem);
+        line-height: 1.1;
+        letter-spacing: -1.5px;
+    }
+
+    .main-hero-right h2 {
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+    }
+
+
+    /* About */
+    .content-section {
+        gap: 24px;
+        padding: 40px 28px;
+    }
+
+    .about-me-left,
+    .right-content {
+        min-width: 0;
+    }
+
+    .box {
+        padding: 22px;
+    }
+
+
+    /* Skills */
+    .skills {
+        padding: 48px 28px;
+    }
+
+
+    /* Projects */
+    .projects-section {
+        min-height: auto;
+        padding: 36px 5%;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .sub-cards {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 10px);
+        min-width: 0;
+        height: auto;
+    }
+
+    .card-img img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+
+    /* Certificates */
+    .certi-section {
+        gap: 24px;
+        padding: 40px 28px;
+    }
+
+    .left-btn {
+        width: 35%;
+    }
+
+    .right-btn {
+        width: 55%;
+    }
+
+    .certificate-img-1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* Contact */
+    .contact-section {
+        gap: 20px;
+        padding: 36px 24px;
+    }
+
+    .mid-content {
+        flex-basis: 250px;
+        padding: 24px;
+    }
+
+    .right-form {
+        flex-basis: 320px;
+        padding: 24px;
+    }
+
+
+    /* Footer */
+    .footer {
+        gap: 20px;
+        padding: 32px 24px;
+    }
+
+}
+
+
+/* ==============================
+   LARGE DESKTOPS
+   1440px and above
+================================ */
+
+@media (min-width: 1440px) {
+
+    .navbar {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .main-hero-left {
+        padding-left: 8%;
+    }
+
+    .main-hero-right {
+        padding-right: 8%;
+    }
+
+    .content-section,
+    .certi-section,
+    .contact-section {
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+
+}
