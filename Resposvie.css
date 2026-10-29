@@ -78,7 +78,7 @@ width: 100%;
     width: 100%;
   }
   .skills{
-    padding: 34px;
+    padding: 51px 4px 0px 4px;;
   }
   .cards{
     width: 100%;
@@ -104,11 +104,14 @@ width: 100%;
     width: 90%;
     padding: 18px;
     margin: 44px;
+    height: auto;
   }
   .right-form{
     width: 90%;
     padding: 18px;
     margin-bottom: 50px;
+    height: auto;
+    gap: 0px;
   }
   .certificate-img-1 img{
     width: 290px;
