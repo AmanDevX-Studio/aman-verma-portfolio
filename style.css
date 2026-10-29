@@ -97,7 +97,7 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  min-height: 100%;
+  min-height: 100vh;
   overflow: hidden;
 
   background-image:
@@ -167,7 +167,7 @@ button:hover {
 
 .content-section {
   display: flex;
-  min-height: 100%;
+  min-height: 100vh;
   height: auto;
   padding: 60px;
   line-height: 1.4em;
@@ -239,7 +239,7 @@ button:hover {
 .skills {
   text-align: center;
   padding: 70px;
-  min-height: 70%;
+  min-height: 70vh;
   height: auto;
   background: linear-gradient(135deg, #0b0814, #19112b, #100d1a);
   color: #f5f3ff;
@@ -329,7 +329,7 @@ button:hover {
   background-color: #0b0614;
   color: #f5f3ff;
   padding: 40px 8%;
-  min-height: 106%;
+  min-height: 106vh;
   height: auto;
   box-shadow: 2px 3px 5px solid grey;
 }
@@ -351,13 +351,10 @@ button:hover {
   display: flex;
   border-radius: 8px;
   border: 1px solid #c6a2ff52;
+  height: 500px;
   flex-direction: column;
   justify-content: center;
   display: inline;
-  width: 100%;
-  max-width: 500px;
-  min-width: 0;
-  height: auto;
 }
 
 .badge {
@@ -374,7 +371,7 @@ button:hover {
   font-size: small;
 }
 .card-img img {
-  height: 300px;
+  height: auto;
   width: 300px;
   overflow: hidden;
   object-fit: cover;
@@ -405,7 +402,7 @@ button:hover {
   background: linear-gradient(135deg, #100d1a, #171126, #0b0814);
   color: #f5f3ff;
   padding: 90px;
-  min-height: 66%;
+  min-height: 66vh;
   height: auto;
   display: flex;
   justify-content: center;
@@ -421,8 +418,8 @@ button:hover {
   gap: 10px;
 }
 .certificate-img-1 img {
-  height: 150x;
-  width: 360px;
+  height:auto;
+  width: 320px;
   border: 2px solid #6700ff;
   box-shadow: 5px 8px 0px 0px #424242;
 }
@@ -442,7 +439,7 @@ button:hover {
   background: linear-gradient(135deg, #0b0814, #19112b, #100d1a);
   color: #f5f3ff;
   gap: 20px;
-  min-height: 100%;
+  min-height: 100vh;
   height: auto;
 }
 
